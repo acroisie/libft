@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 21:13:03 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/20 21:13:03 by acroisie         ###   ########.fr       */
+/*   Created: 2021/10/21 11:08:57 by acroisie          #+#    #+#             */
+/*   Updated: 2021/10/21 11:08:57 by acroisie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i])
+	if (dstsize == 0)
+		return (ft_strlen(src));
+	while (src[i] && (i < (dstsize - 1)))
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
+		dst[i] = src[i];
 		i++;
 	}
-	return (NULL);
+	dst[i] = '\0';
+	return (ft_strlen(src));
 }

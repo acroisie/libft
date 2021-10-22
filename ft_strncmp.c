@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 21:13:03 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/20 21:13:03 by acroisie         ###   ########.fr       */
+/*   Created: 2021/10/21 09:38:44 by acroisie          #+#    #+#             */
+/*   Updated: 2021/10/21 09:38:44 by acroisie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (i < n)
 	{
-		if (s[i] == (char)c)
-			return ((char *)&s[i]);
+		if (s1[i] - s2[i] != 0)
+			return (s1[i] - s2[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
