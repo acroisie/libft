@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 13:51:10 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/02 16:06:16 by acroisie         ###   ########.fr       */
+/*   Updated: 2021/11/02 17:18:23 by acroisie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 
 	i = 0;
-	str = malloc(len * sizeof(char));
+	str = malloc((len * sizeof(char)) + 1);
 	if (str == NULL)
 		return (NULL);
 	while (i <= len)
@@ -28,5 +28,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		start++;
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
