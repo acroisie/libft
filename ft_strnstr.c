@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/25 14:04:28 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/25 14:04:28 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:42:08 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:42:08 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

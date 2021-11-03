@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 14:54:31 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/19 14:54:31 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:39:35 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:39:35 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

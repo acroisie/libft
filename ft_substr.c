@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 13:51:10 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/02 17:18:23 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:43:00 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:43:22 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

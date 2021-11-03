@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/21 09:38:44 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/21 09:38:44 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:41:19 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:41:19 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

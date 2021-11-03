@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 14:54:01 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/19 14:54:01 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:25:50 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:25:50 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int ch, size_t maxSize)
 {

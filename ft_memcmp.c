@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/19 16:46:39 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/19 16:46:39 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:38:34 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:38:34 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

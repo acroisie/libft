@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 21:13:03 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/20 21:13:03 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:40:05 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:40:05 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 11:38:53 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/20 11:38:53 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:43:45 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:43:45 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

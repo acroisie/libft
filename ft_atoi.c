@@ -5,10 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/26 10:54:22 by acroisie          #+#    #+#             */
-/*   Updated: 2021/10/26 10:54:22 by acroisie         ###   ########.fr       */
+/*   Created: 2021/11/03 09:19:37 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 09:19:37 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char const *str)
 {

@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/03 09:21:16 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/03 09:22:21 by acroisie         ###   ########lyon.fr   */
+/*   Created: 2021/11/03 08:17:21 by acroisie          #+#    #+#             */
+/*   Updated: 2021/11/03 10:16:02 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t elementCount, size_t elementSize)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	void	*ptr;
+	int	i;
 
-	ptr = malloc(elementCount * elementSize);
-	if (ptr == NULL)
-		return (NULL);
-	ft_bzero(ptr, elementCount);
-	return (ptr);
+	i = 0;
+	while (s1[i])
+	{
+		
+	}
 }
