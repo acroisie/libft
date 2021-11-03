@@ -6,21 +6,11 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 12:03:02 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/03 09:40:28 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/03 14:24:57 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strdup(char *src)
 {
