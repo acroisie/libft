@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 08:20:05 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/03 14:32:02 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/03 17:41:54 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int		ft_atoi(char const *str);
 void	ft_bzero(void *s, size_t n);
-void	*calloc(size_t elementCount, size_t elementSize);
+void	*ft_calloc(size_t elementCount, size_t elementSize);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -29,6 +29,7 @@ void	*ft_memccpy(void *dst, const void *src, int ch, size_t maxSize);
 void	*ft_memchr(const void *memoryBlock, int searchedChar, size_t size);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t size);
+void	*ft_memmove(void *dst, const void *src, size_t size);
 void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *src);
