@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 12:03:02 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/03 18:46:08 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/04 15:28:00 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 char	*ft_strdup(char *src)
 {
+	int		i;
 	char	*copy;
 	int		len;
-	int		i;
 
+	i = 0;
 	len = ft_strlen(src);
 	copy = malloc((len + 1) * sizeof(char));
-	i = 0;
+	if (copy == NULL)
+		return (NULL);
 	while (src[i])
 	{
 		copy[i] = src[i];
