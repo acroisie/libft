@@ -34,5 +34,6 @@ void	*ft_memmove(void *dst, const void *src, size_t size)
 		str_dst[i] = buff[i];
 		i++;
 	}
+	free(buff);
 	return (dst);
 }
