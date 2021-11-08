@@ -12,11 +12,19 @@
 
 #include "libft.h"
 
+static int	return_value(int sign)
+{
+	if (sign >= 0)
+		return (-1);
+	else
+		return (0);
+}
+
 int	ft_atoi(char const *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int			i;
+	int			sign;
+	long int	result;
 
 	i = 0;
 	sign = 1;
@@ -25,14 +33,14 @@ int	ft_atoi(char const *str)
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == '-')
+		if (str[i++] == '-')
 			sign = sign * -1;
-		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = result * 10 + (str[i] - 48);
-		i++;
+		result = result * 10 + (str[i++] - 48);
+		if (result > 2147483648)
+			return (return_value(sign));
 	}
 	return (result * sign);
 }

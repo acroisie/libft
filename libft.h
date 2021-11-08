@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 08:20:05 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/03 17:41:54 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/08 11:29:37 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t size);
 void	*ft_memmove(void *dst, const void *src, size_t size);
 void	*ft_memset(void *s, int c, size_t n);
+char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *src);
 char	*ft_strjoin(char const *s1, char const *s2);
