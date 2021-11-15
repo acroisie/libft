@@ -6,7 +6,7 @@
 #    By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 15:10:13 by acroisie          #+#    #+#              #
-#    Updated: 2021/11/15 17:36:52 by acroisie         ###   ########lyon.fr    #
+#    Updated: 2021/11/15 21:40:39 by acroisie         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ BONUS_SRCS = ft_lstadd_back.c \
 				ft_lstnew.c \
 				ft_lstsize.c
 
-OBJS := $(SRCS:.c=*.o)
+OBJS := $(SRCS:.c=.o)
 
 BONUS_OBJS := $(BONUS_SRCS:.c=*.o)
 
@@ -67,11 +67,9 @@ all : $(NAME)
 
 bonus : $(BONUS_OBJS)
 	ar rcs $(NAME) $(BONUS_OBJS)
-	ranlib $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	ranlib $(NAME)
 
 %.o : %.c libft.h
 	$(CC) -c $< -o $@
