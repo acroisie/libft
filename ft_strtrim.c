@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 11:11:01 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/08 11:16:28 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/15 09:25:36 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		start;
 	char	*new_str;
 
+	if (!s1 || !set)
+		return (NULL);
 	len_to_sub = 0;
 	end = ft_strlen(s1);
 	while (c_in_set(s1[len_to_sub], set))

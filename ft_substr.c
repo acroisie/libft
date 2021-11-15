@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:43:00 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/04 18:30:38 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/15 09:25:58 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	if ((unsigned int)ft_strlen(s) <= start)
 		len = 0;
 	if (ft_strlen(s) - start < len)

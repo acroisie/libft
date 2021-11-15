@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:27:49 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/09 16:36:45 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/15 09:26:53 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	int		word_nb;
 
+	if (!s)
+		return (NULL);
 	word_nb = word_count(s, c);
 	tab = malloc((word_nb + 1) * sizeof(char *));
 	if (tab == NULL)

@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:07:24 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/03 14:25:33 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2021/11/15 09:22:01 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!s1 || !s2)
+		return (NULL);
 	str = malloc(((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char)) + 1);
-	if (str == NULL)
+	if (str == NULL || (!s1 || !s2))
 		return (NULL);
 	while (s1[j])
-	{
-		str[i] = s1[j];
-		j++;
-		i++;
-	}
+		str[i++] = s1[j++];
 	j = 0;
 	while (s2[j])
-	{
-		str[i] = s2[j];
-		j++;
-		i++;
-	}
+		str[i++] = s2[j++];
 	str[i] = '\0';
 	return (str);
 }
