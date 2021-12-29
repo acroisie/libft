@@ -39,7 +39,7 @@ int	ft_atoi(char const *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i++] - 48);
-		if (result > 2147483648)
+		if (result > 2147483647)
 			return (return_value(sign));
 	}
 	return (result * sign);
