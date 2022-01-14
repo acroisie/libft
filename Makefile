@@ -6,7 +6,7 @@
 #    By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 15:10:13 by acroisie          #+#    #+#              #
-#    Updated: 2021/11/15 21:40:39 by acroisie         ###   ########lyon.fr    #
+#    Updated: 2022/01/14 08:29:26 by acroisie         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CC = gcc -Wall -Wextra -Werror
 SRCS = ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
+		ft_free_split.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \

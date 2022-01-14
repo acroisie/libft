@@ -6,7 +6,7 @@
 /*   By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 08:20:05 by acroisie          #+#    #+#             */
-/*   Updated: 2021/11/15 14:56:05 by acroisie         ###   ########lyon.fr   */
+/*   Updated: 2022/01/14 08:29:07 by acroisie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct s_list
 int		ft_atoi(char const *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t elementCount, size_t elementSize);
+void	ft_free_split(char **tab);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -56,6 +57,8 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *src);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin_free_s1(char *s1, char *s2);
+char	*ft_strjoin_free_s2(char *s1, char *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int		ft_strlen(const char *s);
