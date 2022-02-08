@@ -6,7 +6,7 @@
 #    By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 15:10:13 by acroisie          #+#    #+#              #
-#    Updated: 2022/02/08 12:01:18 by acroisie         ###   ########lyon.fr    #
+#    Updated: 2022/02/08 12:10:46 by acroisie         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,17 +68,14 @@ BONUS_OBJS := $(BONUS_SRCS:.c=*.o)
 all : $(NAME)
 
 bonus : $(addprefix objs/, $(BONUS_OBJS))
-	@ar rcs $(NAME) $(addprefix objs/, $(BONUS_OBJS))
-	@echo "\033[0;32m[BUILD]\033[0m \t $@"
+	ar rcs $(NAME) $(addprefix objs/, $(BONUS_OBJS))
 
 $(NAME) : $(addprefix objs/, $(OBJS))
-	@ar rcs $(NAME) $(addprefix objs/, $(OBJS))
-	@echo "\033[0;32m[BUILD]\033[0m \t $@"
+	ar rcs $(NAME) $(addprefix objs/, $(OBJS))
 
 objs/%.o : %.c libft.h
-	@mkdir -p objs
-	@$(CC) -c $< -o $@
-	@echo "\033[0;33m[BUILD]\033[0m \t $@"
+	mkdir -p objs
+	$(CC) -c $< -o $@
 	
 clean :
 	rm -rf objs
