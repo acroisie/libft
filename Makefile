@@ -6,7 +6,7 @@
 #    By: acroisie <acroisie@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/03 15:10:13 by acroisie          #+#    #+#              #
-#    Updated: 2022/01/14 08:29:26 by acroisie         ###   ########lyon.fr    #
+#    Updated: 2022/02/08 12:01:18 by acroisie         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRCS = ft_atoi.c \
 		ft_strlen.c \
 		ft_strmapi.c \
 		ft_strncmp.c \
+		ft_strndup.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
 		ft_strtrim.c \
@@ -66,17 +67,22 @@ BONUS_OBJS := $(BONUS_SRCS:.c=*.o)
 
 all : $(NAME)
 
-bonus : $(BONUS_OBJS)
-	ar rcs $(NAME) $(BONUS_OBJS)
+bonus : $(addprefix objs/, $(BONUS_OBJS))
+	@ar rcs $(NAME) $(addprefix objs/, $(BONUS_OBJS))
+	@echo "\033[0;32m[BUILD]\033[0m \t $@"
 
-$(NAME) : $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME) : $(addprefix objs/, $(OBJS))
+	@ar rcs $(NAME) $(addprefix objs/, $(OBJS))
+	@echo "\033[0;32m[BUILD]\033[0m \t $@"
 
-%.o : %.c libft.h
-	$(CC) -c $< -o $@
+objs/%.o : %.c libft.h
+	@mkdir -p objs
+	@$(CC) -c $< -o $@
+	@echo "\033[0;33m[BUILD]\033[0m \t $@"
 	
 clean :
-	rm -rf $(OBJS) $(BONUS_OBJS)
+	rm -rf objs
+	rm -rf $(addprefix objs/, $(OBJS)) $(addprefix objs/, $(BONUS_OBJS))
 
 fclean : clean
 	rm -rf $(NAME)
